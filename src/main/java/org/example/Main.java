@@ -29,6 +29,7 @@ public class Main {
                     .collect(Collectors.toList());
             System.out.println("Even numbers: " + evenNumbers);
 
+
            //count number in List
             long count = numbers.stream().count();
             System.out.println("Count is: " + count);
@@ -41,33 +42,33 @@ public class Main {
                     .collect(Collectors.toList());
             System.out.println("Doubled numbers: " + doubledNumbers);
 
+
             // Step 3: Sort the list in ascending order
             List<Integer> sortedNumbers = numbers.stream()
                     .sorted()
                     .collect(Collectors.toList());
             System.out.println("Sorted numbers: " + sortedNumbers);
 
+
             // Perform a 'reduce' operation to calculate the sum of all numbers in the list
             int sum = numbers.stream()
                     .reduce(0, Integer::sum);
             System.out.println("Sum is: " + sum);
 
+
             //  Use 'forEach' and output each processed number.
-            System.out.print("Step 5: Processed numbers: ");
+            System.out.print("Processed numbers: ");
             numbers.stream()
                     .map(number -> number * 2)
                     .forEach(number -> System.out.print(number + " "));
             System.out.println();
 
+
             // Collect the processed numbers into a new list using 'collect'.
             List<Integer> processedNumbers = numbers.stream()
                     .map(number -> number * 2)
                     .collect(Collectors.toList());
-            System.out.println("Step 6: Processed numbers collected into a new list: " + processedNumbers);
-
-
-
+            System.out.println("Processed numbers collected into a new list: " + processedNumbers);
         }
-
 
     }
