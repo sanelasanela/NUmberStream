@@ -57,7 +57,7 @@ public class Main {
 
 
             //  Use 'forEach' and output each processed number.
-            System.out.print("Processed numbers: ");
+            System.out.print("Processed fff: ");
             numbers.stream()
                     .map(number -> number * 2)
                     .forEach(number -> System.out.print(number + " "));
