@@ -68,7 +68,7 @@ public class Main {
             List<Integer> processedNumbers = numbers.stream()
                     .map(number -> number * 2)
                     .collect(Collectors.toList());
-            System.out.println("Processed numbers collected into a new list: " + processedNumbers);
+            System.out.println("Processed numbers kkkkkkcollected into a new list: " + processedNumbers);
         }
 
     }
